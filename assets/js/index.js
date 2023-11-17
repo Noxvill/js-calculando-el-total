@@ -1,4 +1,4 @@
-precio = 300000; 
+precio = 400000; 
 var cantidad = 0;
 var total= 0; 
 
