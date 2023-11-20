@@ -31,7 +31,10 @@ valortotal.innerHTML = precio * cantidad;
 // Función que se ejecuta cuando se hace click en el botón -
 
 function restarcantidad(){
-
+if (cantidad <=0)
+{
+window.alert("La cantidad no puede ser menor a 0")
+} else {
     cantidad = cantidad - 1;
     var q = document.querySelector(".cantidad");
     q.innerHTML = cantidad
@@ -39,6 +42,6 @@ function restarcantidad(){
     // Mostrando el precio total producto del base * cantidad
 valortotal = document.querySelector(".valor-total");
 valortotal.innerHTML = precio * cantidad;
-    
+}
     }
 
